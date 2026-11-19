@@ -40,7 +40,7 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
-    command: sh -c "npx prisma migrate deploy"
+    command: sh -c "npx prisma migrate deploy && node src/server.js"
     
 volumes:
   postgres_data:
