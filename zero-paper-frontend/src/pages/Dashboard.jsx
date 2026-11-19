@@ -534,7 +534,7 @@ export default function Dashboard() {
                   tone={card.tone}
                   money={card.money}
                   onClick={() => setModal({
-                    key: card.key,
+                    key: card.key === "recebido" ? "recebimentos" : card.key,
                     title: card.key === "recebido" ? "Recebimentos do período" : undefined,
                   })}
                 />
